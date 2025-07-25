@@ -19,7 +19,7 @@ SHELL := /bin/bash
 ##################################################################
 
 # Definition of the grfs
-REPO_NAME           ?= V4 Trains
+REPO_NAME           ?= V4 Trains Rail Price Fork
 
 # This is the filename part common to the grf file, main source file and the tar name
 BASE_FILENAME       ?= v4

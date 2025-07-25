@@ -5,7 +5,7 @@
 
 #Main grf title and description
 STR_GRF_NAME                    :{TITLE}
-STR_GRF_DESCRIPTION             :{SILVER}Pociągi grupy V4, opart na 2cc Trains, wersja NML{}{}(c)V4{}Licencja:GPLv2 lub wyższa.{}Szczegóły w pliku readme.txt.
+STR_GRF_DESCRIPTION             :{SILVER}Pociągi grupy V4, oparte na 2cc Trains, wersja NML. Ta edycja pozwala na ustawienie cen infrastruktury.{}{}(c)V4{}Licencja:GPLv2 lub wyższa.{}Szczegóły w pliku readme.txt.
 STR_GRF_URL             :https://dev.openttdcoop.org/projects/v4-train-set
 
 #General error messages
@@ -18,6 +18,10 @@ STR_PARAM_PURCHASE_COST             :Mnożnik kosztów zakupu
 STR_PARAM_PURCHASE_COST_DESC        :Do zmniejszania/zwiększania kosztów zakupu pojazdów (dotyczy tylko tego setu)
 STR_PARAM_RUNNING_COST              :Mnożnik kosztów utrzymania
 STR_PARAM_RUNNING_COST_DESC         :Do zmniejszania/zwiększania kosztów utrzymania/amortyzacji pojazdów (dotyczy tylko tego setu)
+STR_PARAM_RAIL_COST                 :Mnożnik kosztów budowy infrastruktury
+STR_PARAM_RAIL_COST_DESC            :Do zmniejszania/zwiększania kosztów budowy torów (dotyczy tylko tego setu).
+STR_PARAM_UPKEEP_COST               :Mnożnik kosztów utrzymania infrastruktury
+STR_PARAM_UPKEEP_COST_DESC          :Do zmniejszania/zwiększania kosztów utrzymania infrastruktury (dotyczy tylko tego setu).
 
 STR_PARAM_DIVIDE_16                 :1/16
 STR_PARAM_DIVIDE_8                  :1/8

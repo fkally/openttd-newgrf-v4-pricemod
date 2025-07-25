@@ -5,7 +5,7 @@
 
 #Main grf title and description
 STR_GRF_NAME                    :{TITLE}
-STR_GRF_DESCRIPTION             :{SILVER}Set vlakova srednje i istočne Europe na osnovi dijela Trainmasterovog Seta 2cc vlakova u NML-u{}{}(c)V4, 2ccts{}Licenca:GPLv2 ili viša.{}Vidi readme za detalje.
+STR_GRF_DESCRIPTION             :{SILVER}Set vlakova srednje i istočne Europe na osnovi dijela Trainmasterovog Seta 2cc vlakova u NML-u. Rail price control version.{}{}(c)V4, 2ccts{}Licenca:GPLv2 ili viša.{}Vidi readme za detalje.
 STR_GRF_URL             :https://dev.openttdcoop.org/projects/v4-train-set
 
 #General error messages
@@ -18,6 +18,10 @@ STR_PARAM_PURCHASE_COST             :Višekratnik za troškove nabave vozila
 STR_PARAM_PURCHASE_COST_DESC        :Možete koristiti ovu postavku za povećavanje ili smanjivanje troškova nabave vozila u ovom setu.
 STR_PARAM_RUNNING_COST              :Višekratnik za tekuće troškove vozila
 STR_PARAM_RUNNING_COST_DESC         :Možete koristiti ovu postavku za povećavanje ili smanjivanje tekućih troškova vozila u ovom setu.
+STR_PARAM_RAIL_COST                 :Višekratnik za troškove izgradnje pruge
+STR_PARAM_RAIL_COST_DESC            :Možete koristiti ovu postavku za povećavanje ili smanjivanje troškova izgradnje pruge u ovom setu.
+STR_PARAM_UPKEEP_COST               :Višekratnik za troškove održavanja pruge
+STR_PARAM_UPKEEP_COST_DESC          :Možete koristiti ovu postavku za povećavanje ili smanjivanje troškova održavanja pruge u ovom setu.
 
 STR_PARAM_DIVIDE_16                 :1/16
 STR_PARAM_DIVIDE_8                  :1/8

@@ -200,8 +200,8 @@ if (railtype_available("SAAD") || (loading_stage == LOADING_STAGE_RESERVE)) {
       powered_railtype_list: [NORMAL_GAUGES_3KV, NORMAL_GAUGES_MULTISYSTEM];
       alternative_railtype_list: [NORMAL_GAUGES_3KV, NORMAL_GAUGES_MULTISYSTEM];
       curve_speed_multiplier: 1;
-      construction_cost: ELOW_BUILDCOST
-      maintenance_cost: ELOW_INFRACOST
+      construction_cost: (0 + param_rail_cost) * ELOW_BUILDCOST
+      maintenance_cost: (0 + param_upkeep_cost) * ELOW_INFRACOST
       speed_limit: ELOW_VMAX km/h;      
       acceleration_model: ACC_MODEL_RAIL;
       map_colour: 0x9C;

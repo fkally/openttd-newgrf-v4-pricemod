@@ -147,8 +147,8 @@ if (railtype_available("RL2S") || (loading_stage == LOADING_STAGE_RESERVE)) {
       alternative_railtype_list: [DUAL_GAUGES];
       curve_speed_multiplier: 1;
       station_graphics: RAILTYPE_STATION_NORMAL;
-      construction_cost: RL2S_BUILDCOST
-      maintenance_cost: RL2S_INFRACOST
+      construction_cost: (0 + param_rail_cost) * RL2S_BUILDCOST
+      maintenance_cost: (0 + param_upkeep_cost) * RL2S_INFRACOST
       speed_limit: RL2S_VMAX km/h;      
       acceleration_model: ACC_MODEL_RAIL;
       map_colour: 0xBA;

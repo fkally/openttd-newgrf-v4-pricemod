@@ -17,6 +17,8 @@ Makefile.fordist
 *-*-source.zip
 v4/*
 v4.tar
+v4_railcost.tar
+v4_railcost/*
 
 # The local makefile should be ignored:
 Makefile.local

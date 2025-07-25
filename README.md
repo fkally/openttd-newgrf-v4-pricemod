@@ -1,5 +1,7 @@
 
-V4 Trains is a fork from 2cc Trains In NML for OpenTTD. This set is focused on train from Central Europe (mostly Visegrad group).
+This fork is a fork of V4 Trains, which is a fork from 2cc Trains In NML for OpenTTD. This set is focused on train from Central Europe (mostly Visegrad group). With this number of forks it must be easy to eat spaghetti.
+
+This adjustment has been made by fkally/zaiw in an effort to allow for a better flexibility in adjusting this GRF's difficulty. I found the infrastructure cost way to low compared to the vehicles, especially when playing with other GRF.
 
 This NewGRF was written by the authors as listed in the credits section
 and is free to use for anyone under the terms of the GNU Pulic License
@@ -52,6 +54,9 @@ JPtracks, Dutchtracks, Rail-CS, xUSSR set.
 
 Depot graphics repaints based on sprites created by authors of the following projects:
 JPtracks, Swedishrails, Modular Locomotive Sheds Depot.
+
+Code for the readustable rail price fork:
+- ZaiW/fkally
 
 Code for V4 CEE:
 - McZapkie

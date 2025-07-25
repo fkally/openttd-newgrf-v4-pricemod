@@ -133,8 +133,8 @@ if (railtype_available("DBHS") || (loading_stage == LOADING_STAGE_RESERVE)) {
       powered_railtype_list: [NORMAL_GAUGES_15KV, NORMAL_GAUGES_MULTISYSTEM];
       alternative_railtype_list: [NORMAL_GAUGES_15KV, NORMAL_GAUGES_MULTISYSTEM];
       curve_speed_multiplier: 4;
-      construction_cost: DBHS_BUILDCOST
-      maintenance_cost: DBHS_INFRACOST
+      construction_cost: (1 + param_rail_cost) * DBHS_BUILDCOST
+      maintenance_cost: (2 + param_upkeep_cost) * DBHS_INFRACOST
       speed_limit: DBHS_VMAX km/h;      
       acceleration_model: ACC_MODEL_RAIL;
       map_colour: 0xB9;

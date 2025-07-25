@@ -56,7 +56,7 @@
 #define DBNE_YEAR 1930
 #define DBNE_SORT 121
 #define DBNE_ASPECTS 1
-#define DBHE_BUILDCOST 36;
+#define DBHE_BUILDCOST 36 * (0 + param_rail_cost);
 #define DBHE_INFRACOST 24;
 #define DBHE_VMAX  	130
 #define DBHE_YEAR 1935

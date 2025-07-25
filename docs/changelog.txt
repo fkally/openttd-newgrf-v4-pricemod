@@ -1,5 +1,10 @@
 V4 Trains changelog
 =========================
+
+rc_001
+- Added the rail build cost and maintenance params
+
+?
  - railtypes check
 7995
 - only semaphores for first track type

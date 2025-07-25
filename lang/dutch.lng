@@ -3,7 +3,7 @@
 
 #Main grf title and description
 STR_GRF_NAME                    :{TITLE}
-STR_GRF_DESCRIPTION             :{SILVER}Centraal- en Oost-Europese treinset op basis van een aftakking van Trainsmaster's 2cc-treinen in NML-set{}{}(c)V4, 2ccts{}Licentie:GPLv2 of hoger.{}Zie readme voor details.
+STR_GRF_DESCRIPTION             :{SILVER}Centraal- en Oost-Europese treinset op basis van een aftakking van Trainsmaster's 2cc-treinen in NML-set. Deze aftakking maakt het mogelijk om de kosten van spoorbouw en -onderhoud in te stellen.{}{}(c)V4, 2ccts{}Licentie:GPLv2 of hoger.{}Zie readme voor details.
 STR_GRF_URL             :https://dev.openttdcoop.org/projects/v4-train-set
 
 #General error messages
@@ -16,6 +16,10 @@ STR_PARAM_PURCHASE_COST             :Vermenigvuldigingsfactor voor aankoopkosten
 STR_PARAM_PURCHASE_COST_DESC        :Je kunt deze instelling gebruiken om de aankoopkosten van de voertuigen in deze set te verhogen of verlagen.
 STR_PARAM_RUNNING_COST              :Vermenigvuldigingsfactor voor onderhoudskosten
 STR_PARAM_RUNNING_COST_DESC         :Je kunt deze instelling gebruiken om de onderhoudskosten van de voertuigen in deze set te verhogen of verlagen.
+STR_PARAM_RAIL_COST                 :Vermenigvuldigingsfactor voor spoorbouwkosten
+STR_PARAM_RAIL_COST_DESC            :Je kunt deze instelling gebruiken om de bouwkosten van het spoor in deze set te verhogen of verlagen.
+STR_PARAM_UPKEEP_COST               :Vermenigvuldigingsfactor voor onderhoudskosten van spoor
+STR_PARAM_UPKEEP_COST_DESC          :Je kunt deze instelling gebruiken om de onderhoudskosten van het spoor in deze set te verhogen of verlagen.
 
 STR_PARAM_DIVIDE_16                 :1/16
 STR_PARAM_DIVIDE_8                  :1/8
