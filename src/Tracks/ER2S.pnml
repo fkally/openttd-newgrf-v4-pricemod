@@ -146,8 +146,8 @@ if (railtype_available("ER2S") || (loading_stage == LOADING_STAGE_RESERVE)) {
       powered_railtype_list: [NORMAL_GAUGES_3KV, NORMAL_GAUGES_MULTISYSTEM, DUAL_GAUGES_3KV, BROAD_GAUGES_3KV];
       curve_speed_multiplier: 100;
       station_graphics: RAILTYPE_STATION_NORMAL;
-      construction_cost: (0 + param_rail_cost) * ER2S_BUILDCOST
-      maintenance_cost: (0 + param_upkeep_cost) * ER2S_INFRACOST
+      construction_cost: ER2S_BUILDCOST * param_rail_cost /4;
+      maintenance_cost: ER2S_INFRACOST * param_upkeep_cost /4;
       speed_limit: ER2S_VMAX km/h;      
       acceleration_model: ACC_MODEL_RAIL;
       map_colour: 0x74;

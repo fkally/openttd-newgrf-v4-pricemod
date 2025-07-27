@@ -163,8 +163,8 @@ if (railtype_available("RAIL") || (loading_stage == LOADING_STAGE_RESERVE)) {
       compatible_railtype_list : [ALL_NORMAL_GAUGES, DUAL_GAUGES, DUAL_GAUGES_3KV, "NG6R"];
       powered_railtype_list: [ALL_NORMAL_GAUGES, DUAL_GAUGES, DUAL_GAUGES_3KV, "NG6R"];
       curve_speed_multiplier: 2;
-      construction_cost: (-1 + param_rail_cost) * RAIL_BUILDCOST
-      maintenance_cost: (0 + param_upkeep_cost) * RAIL_INFRACOST
+      construction_cost: RAIL_BUILDCOST * param_rail_cost / 4;
+      maintenance_cost: RAIL_INFRACOST * param_upkeep_cost / 4;
       speed_limit: RAIL_VMAX km/h;      
       acceleration_model: ACC_MODEL_RAIL;
       map_colour: 0xD0;

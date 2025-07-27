@@ -162,8 +162,8 @@ if (railtype_available("SDAA") || (loading_stage == LOADING_STAGE_RESERVE)) {
       powered_railtype_list: [NORMAL_GAUGES_25KV, NORMAL_GAUGES_MULTISYSTEM];
       alternative_railtype_list: [NORMAL_GAUGES_25KV, NORMAL_GAUGES_MULTISYSTEM];
       curve_speed_multiplier: 4;
-      construction_cost: (1 + param_rail_cost) * SDAA_BUILDCOST
-      maintenance_cost: (2 + param_upkeep_cost) * SDAA_INFRACOST
+      construction_cost: SDAA_BUILDCOST * param_rail_cost / 4;
+      maintenance_cost: SDAA_INFRACOST * param_upkeep_cost / 4;
       speed_limit: SDAA_VMAX km/h;      
       acceleration_model: ACC_MODEL_RAIL;
       map_colour: 0x93;

@@ -50,14 +50,15 @@
 #define EHIG_ASPECTS 2
 #define EHIG_SORT 113
 
-#define DBNE_BUILDCOST 28;
+#define DBNE_BUILDCOST(SCALAR) /
+min(255, SCALAR * (DBNE_BUILDCOST * (0 + param_rail_cost)))
 #define DBNE_INFRACOST 18;
 #define DBNE_VMAX  	90
 #define DBNE_YEAR 1930
 #define DBNE_SORT 121
 #define DBNE_ASPECTS 1
-#define DBHE_BUILDCOST 36 * (0 + param_rail_cost);
-#define DBHE_INFRACOST 24;
+#define DBHE_BUILDCOST 144 // Was 36, old formula was 36*4=144 - changed for scalability
+#define DBHE_INFRACOST 120 // Was 24, old formula was 24*(1+4)=120 - changed for scalability
 #define DBHE_VMAX  	130
 #define DBHE_YEAR 1935
 #define DBHE_SORT 122
@@ -140,11 +141,9 @@
 #define ERD2_SORT 162
 #define ERD2_ASPECTS 2
 
-#define MTRO_BUILDCOST 19;
-#define MTRO_INFRACOST 10;
+#define MTRO_BUILDCOST 95 // Was 19, old formula was (1+4)*19=95
+#define MTRO_INFRACOST 30 // Was 10, old formula was (-1+4)*10=30
 #define MTRO_VMAX  80
 #define MTRO_YEAR 1895
 #define MTRO_SORT 171
 #define MTRO_ASPECTS 0
-
-

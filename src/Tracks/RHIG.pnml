@@ -155,8 +155,8 @@ if (railtype_available("RHIG") || (loading_stage == LOADING_STAGE_RESERVE)) {
       compatible_railtype_list : [ALL_NORMAL_GAUGES, DUAL_GAUGES, DUAL_GAUGES_3KV, "NG6R"];
       powered_railtype_list: [ALL_NORMAL_GAUGES, DUAL_GAUGES, DUAL_GAUGES_3KV, "NG6R"];
       curve_speed_multiplier: 3;
-      construction_cost: (-1 + param_rail_cost) * RHIG_BUILDCOST
-      maintenance_cost: (1 + param_upkeep_cost) * RHIG_INFRACOST
+      construction_cost: RHIG_BUILDCOST * param_rail_cost / 4;
+      maintenance_cost: RHIG_INFRACOST * param_upkeep_cost / 4;
       speed_limit: RHIG_VMAX km/h;      
       acceleration_model: ACC_MODEL_RAIL;
       map_colour: 0xD1;
