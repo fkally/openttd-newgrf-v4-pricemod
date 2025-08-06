@@ -5,51 +5,53 @@
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
  *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
-
-#define SAaN_BUILDCOST 4 
-#define SAaN_INFRACOST 1 
+// ratios for the non-electrified: 0.8, 1.2, 1.5, 2.0
+#define SAaN_BUILDCOST 8 
+#define SAaN_INFRACOST 6 
 #define SAaN_VMAX  	50
 #define SAaN_YEAR 1800
 #define SAaN_SORT 101
 #define SAaN_ASPECTS 1
-#define RLOW_BUILDCOST 7 
-#define RLOW_INFRACOST 8 
+#define RLOW_BUILDCOST 14 
+#define RLOW_INFRACOST 17 
 #define RLOW_VMAX  	90
 #define RLOW_YEAR 1855
 #define RLOW_SORT 102
 #define RLOW_ASPECTS 2
-#define RAIL_BUILDCOST 12 
-#define RAIL_INFRACOST 12 
+#define RAIL_BUILDCOST 24 
+#define RAIL_INFRACOST 36 
 #define RAIL_VMAX 	120
 #define RAIL_YEAR 1910
 #define RAIL_SORT 103
 #define RAIL_ASPECTS 2
-#define RHIG_BUILDCOST 24 
-#define RHIG_INFRACOST 16 
+#define RHIG_BUILDCOST 28 
+#define RHIG_INFRACOST 56 
 #define RHIG_YEAR 1940
 #define RHIG_VMAX 	160
 #define RHIG_SORT 104
 #define RHIG_ASPECTS 2
 
+// 3kV normal gauges. Ratios: 0.8, 1.4, 1.8, 2.2
 #define ELOW_BUILDCOST 16 
-#define ELOW_INFRACOST 22 
+#define ELOW_INFRACOST 12 
 #define ELOW_VMAX  	110
 #define ELOW_YEAR 1936
 #define ELOW_SORT 111
 #define ELOW_ASPECTS 2
 #define EMED_BUILDCOST 22 
-#define EMED_INFRACOST 28 
+#define EMED_INFRACOST 31 
 #define EMED_VMAX  	160
 #define EMED_YEAR 1970
 #define EMED_SORT 112
 #define EMED_ASPECTS 2
 #define EHIG_BUILDCOST 32 
-#define EHIG_INFRACOST 36 
+#define EHIG_INFRACOST 58 
 #define EHIG_VMAX  	250
 #define EHIG_YEAR 1990
 #define EHIG_ASPECTS 2
 #define EHIG_SORT 113
 
+// 15kV normal gauges. Ratios: 1.2, 1.6, 2.0, 2.4
 #define DBNE_BUILDCOST 36 // Example value, adjust as needed
 #define DBNE_INFRACOST 24 // Example value, adjust as needed
 #define DBNE_VMAX  	90
@@ -69,6 +71,7 @@
 #define DBHS_SORT 123
 #define DBHS_ASPECTS 2
 
+// 25kV normal gauges. Ratios: 1.4, 1.8, 2.2, 2.6
 #define SCAA_BUILDCOST 34 
 #define SCAA_INFRACOST 19 
 #define SCAA_VMAX  	120
@@ -88,6 +91,7 @@
 #define SEAA_ASPECTS 2
 #define SEAA_SORT 127
 
+// Multisystem normal gauge. Ratio: 1.0
 #define ELRL_BUILDCOST 18 
 #define ELRL_INFRACOST 17 
 #define ELRL_VMAX  70
@@ -95,6 +99,7 @@
 #define ELRL_ASPECTS 0
 #define ELRL_SORT 131
 
+// Dual gauges. Ratios: 0.8, 1.2
 #define RL2S_BUILDCOST 10 
 #define RL2S_INFRACOST 8 
 #define RL2S_VMAX  60
@@ -108,6 +113,7 @@
 #define ER2S_SORT 145
 #define ER2S_ASPECTS 0
 
+// Russian gauges. Ratios: 0.9, 1.1, 1.4, 1.6
 #define RLA0_BUILDCOST 7 
 #define RLA0_INFRACOST 7 
 #define RLA0_VMAX  70
@@ -127,6 +133,7 @@
 #define RLA2_SORT 153
 #define RLA2_ASPECTS 2
 
+// 3kV Russian gauges. Ratios: 1.4, 1.8
 #define ERD1_BUILDCOST 18 
 #define ERD1_INFRACOST 22 
 #define ERD1_VMAX  110
@@ -140,6 +147,7 @@
 #define ERD2_SORT 162
 #define ERD2_ASPECTS 2
 
+// Metro. Ratio: 0.8
 #define MTRO_BUILDCOST 95 // Was 19, old formula was (1+4)*19=95
 #define MTRO_INFRACOST 30 // Was 10, old formula was (-1+4)*10=30
 #define MTRO_VMAX  80

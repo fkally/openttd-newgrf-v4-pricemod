@@ -130,7 +130,7 @@ if (railtype_available("SEAA") || (loading_stage == LOADING_STAGE_RESERVE)) {
       alternative_railtype_list: [NORMAL_GAUGES_25KV, NORMAL_GAUGES_MULTISYSTEM];
       curve_speed_multiplier: 4;
       construction_cost: SEAA_BUILDCOST * param_rail_cost / 4;
-      maintenance_cost: SEAA_INFRACOST * param_upkeep_cost / 4;
+      maintenance_cost: SEAA_INFRACOST * param_upkeep_cost / 8;
       speed_limit: SEAA_VMAX km/h;      
       acceleration_model: ACC_MODEL_RAIL;
       map_colour: 0x94;

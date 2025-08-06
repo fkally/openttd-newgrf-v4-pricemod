@@ -172,9 +172,9 @@ if (railtype_available("RLA1") || (loading_stage == LOADING_STAGE_RESERVE)) {
       alternative_railtype_list: [BROAD_GAUGES_NONELECTRIFIED];
       curve_speed_multiplier: 2;
       station_graphics: RAILTYPE_STATION_NORMAL;
-      construction_cost: RLA1_BUILDCOST * param_rail_cost /4;
-      maintenance_cost: RLA1_INFRACOST * param_upkeep_cost /4;
-      speed_limit: RLA1_VMAX km/h;      
+      construction_cost: RLA1_BUILDCOST * param_rail_cost / 4;
+      maintenance_cost: RLA1_INFRACOST * param_upkeep_cost / 8;
+      speed_limit: RLA1_VMAX km/h;
       acceleration_model: ACC_MODEL_RAIL;
       map_colour: 0x37;
       sort_order: RLA1_SORT;
