@@ -52,7 +52,7 @@
 */
 
 #include "src/Tracks/tracks.pnml"
-#include "src/Tracks/sprite_templates_nutrack.nml"
+#include "src/Tracks/sprite_templates_nutrack.pnml"
 
 #include "src/Tracks/signals_DRG.pnml"
 #include "src/Tracks/signals_CSD.pnml"

@@ -11,8 +11,8 @@ grf {
 	grfid:	"FKLR";
 	name:	string(STR_GRF_NAME);
 	desc:	string(STR_GRF_DESCRIPTION);
-    url:    string(STR_GRF_URL);
-	version:	NEWGRF_VERSION;	//7695; //REPO_REVISION;
+    // url:    string(STR_GRF_URL);
+	version:	7696;	//7695; //REPO_REVISION;
 	min_compatible_version:	7695;
     param {
         param_purchase_cost {
@@ -240,7 +240,7 @@ basecost {
 	PR_RUNNING_TRAIN_DIESEL:   0 + param_running_cost  - 4;
 	PR_RUNNING_TRAIN_ELECTRIC: 0 + param_running_cost  - 4;
 	PR_BUILD_RAIL:             0 + param_rail_cost     - 0;
-	PR_UPKEEP_RAIL:            0 + param_upkeep_cost   - 0;
+	PR_MAINTENANCE_RAIL:       0 + param_upkeep_cost   - 0;
 }
 
 //set depot vehicle width to 32px to avoid overlap

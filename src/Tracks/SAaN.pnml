@@ -164,6 +164,9 @@ if (railtype_available("SAaN") || (loading_stage == LOADING_STAGE_RESERVE)) {
       map_colour: 0xCE;
       sort_order: SAaN_SORT;
       railtype_flags: bitmask();
+      /// Specifies the set of additional signal aspects to be used for this track.
+      /// The value 'SAaN_ASPECTS' refers to a predefined collection of signal states
+      /// that extend the default behavior, allowing for more complex signaling logic.
       extra_aspects: SAaN_ASPECTS;
       enable_programmable_pre_signals: 1;
       enable_restricted_signals: 0;
