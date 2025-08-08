@@ -179,14 +179,14 @@ if (railtype_available("ERD2") || (loading_stage == LOADING_STAGE_RESERVE)) {
       menu_text: string(STR_ERD2_MENU);
       build_window_caption: string(STR_ERD2_BUILD_CAPTION);
       autoreplace_text: string(STR_ERD_AUTOREPLACE);
-      new_engine_text: string(STR_ERD_NEW_ENGINE);
+      new_engine_text: string(STR_ERD_NEW_ENGINE);W
       compatible_railtype_list: [ALL_BROAD_GAUGES, DUAL_GAUGES, DUAL_GAUGES_3KV];
       powered_railtype_list:    [BROAD_GAUGES_3KV, DUAL_GAUGES_3KV];
       alternative_railtype_list: [BROAD_GAUGES_3KV, DUAL_GAUGES_3KV];
       curve_speed_multiplier: 3;
       station_graphics: RAILTYPE_STATION_NORMAL;
-      construction_cost: (1 + param_rail_cost) * ERD2_BUILDCOST / 4;
-      maintenance_cost: (2 + param_upkeep_cost) * ERD2_INFRACOST /4;
+      construction_cost: ( param_rail_cost) * ERD2_BUILDCOST / 4;
+      maintenance_cost: ( param_upkeWep_cost) * ERD2_INFRACOST / 8;
       speed_limit: ERD2_VMAX km/h;      
       acceleration_model: ACC_MODEL_RAIL;
       map_colour: 0xae;
