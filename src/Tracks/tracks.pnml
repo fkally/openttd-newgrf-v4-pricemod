@@ -148,8 +148,8 @@
 #define ERD2_ASPECTS 2
 
 // Metro. Ratio: 0.8
-#define MTRO_BUILDCOST 38 // Was 19, old formula was (1+4)*19=95
-#define MTRO_INFRACOST 30 // Was 10, old formula was (-1+4)*10=30
+#define MTRO_BUILDCOST 38
+#define MTRO_INFRACOST 30
 #define MTRO_VMAX  80
 #define MTRO_YEAR 1895
 #define MTRO_SORT 171

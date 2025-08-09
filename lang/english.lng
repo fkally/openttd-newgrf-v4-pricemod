@@ -3,7 +3,7 @@
 #Main grf title and description
 STR_GRF_NAME			:{TITLE}
 STR_GRF_DESCRIPTION		:{SILVER}A fork of the Central and East Europe train set based on fork of Trainsmaster's 2cc Trains in NML set. Allows you to adjust rail prices.{}{}(c)V4, 2ccts {}License:GPLv2 or higher. {}See readme for details.
-STR_GRF_URL             :https://dev.openttdcoop.org/projects/v4-train-set
+STR_GRF_URL             :https://github.com/fkally/openttd-newgrf-v4-pricemod
 
 #General error messages
 str_used_with_dynamic_engines 		:dynamic_engines = true (setting in openttd.cfg)

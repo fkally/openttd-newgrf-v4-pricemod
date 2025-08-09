@@ -6,7 +6,7 @@
 #Main grf title and description
 STR_GRF_NAME                    :{TITLE}
 STR_GRF_DESCRIPTION             :{SILVER}Pociągi grupy V4, oparte na 2cc Trains, wersja NML. Ta edycja pozwala na ustawienie cen infrastruktury.{}{}(c)V4{}Licencja:GPLv2 lub wyższa.{}Szczegóły w pliku readme.txt.
-STR_GRF_URL             :https://dev.openttdcoop.org/projects/v4-train-set
+STR_GRF_URL             :https://github.com/fkally/openttd-newgrf-v4-pricemod
 
 #General error messages
 str_used_with_dynamic_engines           :dynamic_engines = true (ustawienie w openttd.cfg)

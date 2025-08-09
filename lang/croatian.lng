@@ -6,7 +6,7 @@
 #Main grf title and description
 STR_GRF_NAME                    :{TITLE}
 STR_GRF_DESCRIPTION             :{SILVER}Set vlakova srednje i istočne Europe na osnovi dijela Trainmasterovog Seta 2cc vlakova u NML-u. Rail price control version.{}{}(c)V4, 2ccts{}Licenca:GPLv2 ili viša.{}Vidi readme za detalje.
-STR_GRF_URL             :https://dev.openttdcoop.org/projects/v4-train-set
+STR_GRF_URL             :https://github.com/fkally/openttd-newgrf-v4-pricemod
 
 #General error messages
 str_used_with_dynamic_engines           :dynamic_engines = true (postavka u openttd.cfg)
