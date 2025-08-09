@@ -130,8 +130,8 @@ if (railtype_available("SCAD") || (loading_stage == LOADING_STAGE_RESERVE)) {
       powered_railtype_list: [NORMAL_GAUGES_3KV, NORMAL_GAUGES_MULTISYSTEM];
       alternative_railtype_list: [NORMAL_GAUGES_3KV, NORMAL_GAUGES_MULTISYSTEM];
       curve_speed_multiplier: 3;
-      construction_cost: EHIG_BUILDCOST
-      maintenance_cost: EHIG_INFRACOST
+      construction_cost: (EHIG_BUILDCOST * param_rail_cost) / 4;
+      maintenance_cost: (EHIG_INFRACOST * param_upkeep_cost) / 8;
       speed_limit: EHIG_VMAX km/h;      
       acceleration_model: ACC_MODEL_RAIL;
       map_colour: 0x9E;
@@ -157,5 +157,3 @@ if (railtype_available("SCAD") || (loading_stage == LOADING_STAGE_RESERVE)) {
   }
 }
 }
-
-

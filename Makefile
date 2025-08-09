@@ -19,10 +19,10 @@ SHELL := /bin/bash
 ##################################################################
 
 # Definition of the grfs
-REPO_NAME           ?= V4 Trains
+REPO_NAME           ?= V4 Trains Rail Price Fork
 
 # This is the filename part common to the grf file, main source file and the tar name
-BASE_FILENAME       ?= v4
+BASE_FILENAME       ?= v4-railprice
 
 # Documentation files
 DOC_FILES ?= docs/readme.txt docs/license.txt docs/changelog.txt
@@ -173,8 +173,8 @@ maintainer-clean:: distclean
 
 # ifdef $(MAIN_SRC_FILE)
 
-$(BASE_FILENAME).nml: $(BASE_FILENAME.pnml) $(MANIFEST)
-	$(_E) "[CPP] $(NML_FILE)"
+$(BASE_FILENAME).nml: $(MAIN_SRC_FILE) $(MANIFEST)
+	$(_E) "[CPP] Generating $(NML_FILE)"
 	$(_V) $(CC) -D REPO_REVISION=$(NEWGRF_VERSION) -D NEWGRF_VERSION=$(NEWGRF_VERSION) $(CC_USER_FLAGS) $(CC_FLAGS) -o $(NML_FILE) $(MAIN_SRC_FILE)
 
 clean::

@@ -2,8 +2,8 @@
 
 #Main grf title and description
 STR_GRF_NAME			:{TITLE}
-STR_GRF_DESCRIPTION		:{SILVER}Central and East Europe train set based on fork of Trainsmaster's 2cc Trains in NML set {}{}(c)V4, 2ccts {}License:GPLv2 or higher. {}See readme for details.
-STR_GRF_URL             :https://dev.openttdcoop.org/projects/v4-train-set
+STR_GRF_DESCRIPTION		:{SILVER}A fork of the Central and East Europe train set based on fork of Trainsmaster's 2cc Trains in NML set. Allows you to adjust rail prices.{}{}(c)V4, 2ccts {}License:GPLv2 or higher. {}See readme for details.
+STR_GRF_URL             :https://github.com/fkally/openttd-newgrf-v4-pricemod
 
 #General error messages
 str_used_with_dynamic_engines 		:dynamic_engines = true (setting in openttd.cfg)
@@ -15,6 +15,11 @@ STR_PARAM_PURCHASE_COST             :Purchase cost multiplier
 STR_PARAM_PURCHASE_COST_DESC        :You can use this setting to increase or decrease the purchase costs of the vehicles in this set.
 STR_PARAM_RUNNING_COST              :Running cost multiplier
 STR_PARAM_RUNNING_COST_DESC         :You can use this setting to increase or decrease the running costs of the vehicles in this set.
+STR_PARAM_RAIL_COST                 :Rail construction cost multiplier
+STR_PARAM_RAIL_COST_DESC            :You can use this setting to increase or decrease the building cost of rail infrastructure.
+STR_PARAM_UPKEEP_COST               :Infrastructure maintenance cost multiplier
+STR_PARAM_UPKEEP_COST_DESC          :You can use this setting to increase or decrease the maintenance cost of rail infrastructure.
+
 
 STR_PARAM_DIVIDE_16                 :1/16
 STR_PARAM_DIVIDE_8                  :1/8

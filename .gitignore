@@ -1,6 +1,5 @@
 # Use glob syntax:
 syntax: glob
-
 # And the description file and the grs which are generated automatically
 # This has to be adopted to the newgrf filename
 *.nml
@@ -17,6 +16,8 @@ Makefile.fordist
 *-*-source.zip
 v4/*
 v4.tar
+v4_railcost.tar
+v4_railcost/*
 
 # The local makefile should be ignored:
 Makefile.local
