@@ -16,8 +16,10 @@ Makefile.fordist
 *-*-source.zip
 v4/*
 v4.tar
-v4_railcost.tar
-v4_railcost/*
+v4-railprice.tar
+v4-railprice/*
+src/header_processed.pnml
+v4-railprice_build.pnml
 
 # The local makefile should be ignored:
 Makefile.local

@@ -28,12 +28,12 @@ V4 CEE Trains In NML. Rail Price Fork, July 2025.
 1 About
 -------
 
-V4 Trains is a fork from 2cc Trains In NML for OpenTTD. This set is focused on train from Central Europe (mostly Visegrad group).
+V4 Trains is a fork from 2cc Trains In NML for OpenTTD. This set is focused on train from Central Europe (mostly Visegrad group). The rail price fork allows you to manually adjust rail build and maintenance cost multipliers.
 
 {{GRF_TITLE}}
 MD5Hash:  {{GRF_MD5}}
 Version:  {{REPO_REVISION}}
-GRF ID:   "MCTM"
+GRF ID:   "FKLR"
 
 
 ---------------------

@@ -185,8 +185,8 @@ if (railtype_available("ERD2") || (loading_stage == LOADING_STAGE_RESERVE)) {
       alternative_railtype_list: [BROAD_GAUGES_3KV, DUAL_GAUGES_3KV];
       curve_speed_multiplier: 3;
       station_graphics: RAILTYPE_STATION_NORMAL;
-      construction_cost: ( param_rail_cost) * ERD2_BUILDCOST / 4;
-      maintenance_cost: ( param_upkeep_cost) * ERD2_INFRACOST / 8;
+      construction_cost:  ERD2_BUILDCOST;
+      maintenance_cost: ERD2_INFRACOST / 2;
       speed_limit: ERD2_VMAX km/h;      
       acceleration_model: ACC_MODEL_RAIL;
       map_colour: 0xae;

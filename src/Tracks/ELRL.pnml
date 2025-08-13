@@ -58,8 +58,8 @@ if (railtype_available("ELRL") || (loading_stage == LOADING_STAGE_RESERVE)) {
       powered_railtype_list: [NORMAL_GAUGES_3KV, NORMAL_GAUGES_15KV, NORMAL_GAUGES_25KV, NORMAL_GAUGES_MULTISYSTEM, DUAL_GAUGES_3KV];
       curve_speed_multiplier: 1;
       station_graphics: RAILTYPE_STATION_NORMAL;
-      construction_cost: ELRL_BUILDCOST * param_rail_cost / 4;
-      maintenance_cost: ELRL_INFRACOST * param_upkeep_cost / 8;
+      construction_cost: ELRL_BUILDCOST;
+      maintenance_cost: ELRL_INFRACOST / 2;
       speed_limit: ELRL_VMAX km/h;      
       acceleration_model: ACC_MODEL_RAIL;
       map_colour: 0x97;

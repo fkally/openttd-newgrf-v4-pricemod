@@ -147,8 +147,8 @@ if (railtype_available("RLA2") || (loading_stage == LOADING_STAGE_RESERVE)) {
       alternative_railtype_list: [BROAD_GAUGES_NONELECTRIFIED];
       curve_speed_multiplier: 3;
       station_graphics: RAILTYPE_STATION_NORMAL;
-      construction_cost: RLA2_BUILDCOST * param_rail_cost / 4;
-      maintenance_cost: RLA2_INFRACOST * param_upkeep_cost / 8;
+      construction_cost: RLA2_BUILDCOST;
+      maintenance_cost: RLA2_INFRACOST / 2;
       speed_limit: RLA2_VMAX km/h;
       acceleration_model: ACC_MODEL_RAIL;
       map_colour: 0x39;

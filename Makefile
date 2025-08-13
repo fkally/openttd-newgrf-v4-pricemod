@@ -49,6 +49,9 @@ GRF_FILE            ?= $(BASE_FILENAME).grf
 NML_FILE            ?= $(BASE_FILENAME).nml
 # uncomment MAIN_SRC_FILE if you do not want any preprocessing to happen to your source file
 MAIN_SRC_FILE       ?= $(BASE_FILENAME).pnml
+HEADER_FILE         := src/header.pnml
+PROCESSED_HEADER    := src/header_processed.pnml
+
 
 # List of all files which will get shipped
 # documentation files: readme, changelog and license, usually $(DOC_FILES)
@@ -426,6 +429,72 @@ clean::
 	$(_V) -rm -rf $(DIR_NAME).tar.gz
 	$(_V) -rm -rf $(DIR_NAME).tar.bz2
 	$(_V) -rm -rf $(DIR_NAME).tar.xz
+
+################################################################
+# Detect if the `dev` target is invoked
+################################################################
+
+# Define the filenames
+# GRF_FILE            := $(BASE_FILENAME)$(GRF_SUFFIX).grf
+# NML_FILE            := $(BASE_FILENAME)$(GRF_SUFFIX).nml
+# MAIN_SRC_FILE       := $(BASE_FILENAME).pnml
+# HEADER_FILE         := src/header.pnml
+# PROCESSED_HEADER    := src/header_processed.pnml
+
+# Preprocess the header file to update the version field
+$(PROCESSED_HEADER): $(HEADER_FILE)
+	$(_E) "[PREPROCESS] Updating version in $(HEADER_FILE)"
+	$(_V) sed -e 's/\(version:[[:space:]]*[0-9]*\);/\1$(NEWGRF_VERSION);/' \
+			-e 's/grfid:[[:space:]]*"FKLR";/grfid: "DEVF";/' \
+			$< > $@
+
+# Create a dev pnml file target
+v4-railprice_build.pnml: v4-railprice.pnml $(PROCESSED_HEADER)
+	@echo "[PATCH] Using header_processed.pnml"
+	$(_V) sed 's|#include "src/header.pnml"|#include "src/header_processed.pnml"|' $< > $@
+
+# Single rule for .nml generation
+$(NML_FILE): v4-railprice_build.pnml $(PROCESSED_HEADER) $(MANIFEST)
+	$(_E) "[CPP] Generating $(NML_FILE)"
+	$(_V) $(CC) -D REPO_REVISION=$(NEWGRF_VERSION) -D NEWGRF_VERSION=$(NEWGRF_VERSION) $(CC_USER_FLAGS) $(CC_FLAGS) -o $(NML_FILE) $<
+
+# Single rule for .grf generation
+$(GRF_FILE): $(NML_FILE) $(GENERATE_LNG)
+	$(_E) "[NML] $(GRF_FILE)"
+	$(_V) $(NML) $(NML_FLAGS) --grf $(GRF_FILE) $(NML_FILE)
+
+# Updated dev target
+.PHONY: dev
+dev:
+	@NEWGRF_VERSION_ORIG="$$(./findversion.sh 2>/dev/null | cut -f2)"; \
+	if [[ "$$NEWGRF_VERSION_ORIG" == *0000 ]]; then \
+		NEWGRF_VERSION="$$NEWGRF_VERSION_ORIG"; \
+	else \
+		NEWGRF_VERSION="$$NEWGRF_VERSION_ORIG"0000; \
+	fi; \
+	$(MAKE) clean_dev && \
+	$(MAKE) NEWGRF_VERSION="$$NEWGRF_VERSION" \
+			GRF_SUFFIX="-dev" \
+			NML_FILE="$(BASE_FILENAME)-dev.nml" \
+			GRF_FILE="$(BASE_FILENAME)-dev.grf" \
+			all
+
+# Add clean targets for dev files
+.PHONY: clean_dev
+clean_dev:
+	$(_E) "[CLEAN DEV]"
+	$(_V)-rm -rf $(PROCESSED_HEADER)
+	$(_V)-rm -rf v4-railprice_build.pnml
+	$(_V)-rm -rf $(BASE_FILENAME)-dev.nml
+	$(_V)-rm -rf $(BASE_FILENAME)-dev.grf
+
+clean::
+	$(_E) "[CLEAN ALL]"
+	$(_V)-rm -rf $(PROCESSED_HEADER)
+	$(_V)-rm -rf v4-railprice_build.pnml
+	$(_V)-rm -rf $(BASE_FILENAME)-dev.nml
+	$(_V)-rm -rf $(BASE_FILENAME)-dev.grf
+
 
 ################################################################
 # Bundle source targets

@@ -198,8 +198,8 @@ if (railtype_available("DBNE") || (loading_stage == LOADING_STAGE_RESERVE)) {
       powered_railtype_list: [NORMAL_GAUGES_15KV, NORMAL_GAUGES_MULTISYSTEM];
       alternative_railtype_list: [NORMAL_GAUGES_15KV, NORMAL_GAUGES_MULTISYSTEM];
       curve_speed_multiplier: 1;
-      construction_cost: (DBNE_BUILDCOST * param_rail_cost) / 4;
-      maintenance_cost: (DBNE_INFRACOST * param_upkeep_cost) / 8;
+      construction_cost: DBNE_BUILDCOST;
+      maintenance_cost: DBNE_INFRACOST / 2;
       speed_limit: DBNE_VMAX km/h;      
       acceleration_model: ACC_MODEL_RAIL;
       map_colour: 0xB5;

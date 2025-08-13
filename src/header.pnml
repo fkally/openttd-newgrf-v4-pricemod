@@ -239,8 +239,8 @@ basecost {
 	PR_RUNNING_TRAIN_STEAM:    0 + param_running_cost  - 4;
 	PR_RUNNING_TRAIN_DIESEL:   0 + param_running_cost  - 4;
 	PR_RUNNING_TRAIN_ELECTRIC: 0 + param_running_cost  - 4;
-	PR_BUILD_RAIL:             0 + param_rail_cost     - 0;
-	PR_MAINTENANCE_RAIL:       0 + param_upkeep_cost   - 0;
+	PR_BUILD_RAIL:             0 + param_rail_cost - 4;
+	PR_MAINTENANCE_RAIL:       0 + param_upkeep_cost - 4;
 }
 
 //set depot vehicle width to 32px to avoid overlap
