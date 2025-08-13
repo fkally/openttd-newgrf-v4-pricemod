@@ -1,7 +1,10 @@
 V4 Trains changelog
 =========================
 
-rc_001
+1002
+- Changed the calculation logic, the multiplier parameter has a more predictable behaviour now
+
+1001
 - Added the rail build cost and maintenance params
 
 ?
